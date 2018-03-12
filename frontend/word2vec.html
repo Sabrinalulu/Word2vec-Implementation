@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Word embedding demo</title>
+  <script type='text/javascript' onload="loaded-1" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type='text/javascript' onload="loaded-1" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  function myTest(){
+    var name = document.getElementById('word').value;
+    var dataString = 'word_text=' + name;
+    if(name == ' '){
+      alert("Please enter a word.");
+    }
+    else{
+      $.ajax({
+        type:'POST',
+        url:'http://localhost/receiveText.php',
+        data:dataString,
+        success:function(response){
+          $('#similarwords').html(response);
+        }
+      });
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div class='container'>
+    <h2>Word2vec Demo</h2>
+    <h3>Nearest words</h3>
+    <p>Given a word, this demo shows a list of 10 words that are similar to it. (nearby in the vector space)</p>
+    <input type="text" id="word" name="word" placeholder="Type in a word" autocorrect="off" autocapitalize="none"/>
+    <button id="submitword" onclick="myTest()">Show simialr words</button>
+  </div>
+  <div id="similarwords" class="row"></div>
+</body>
+</html>
