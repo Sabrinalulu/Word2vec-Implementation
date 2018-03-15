@@ -8,7 +8,7 @@ Fllow the Online handbook of Wiki Word2vec implementation (http://textminingonli
 3. Run the word2vec.html.
 
 The php file fetched the word and sent it back:
-![alt text](https://raw.github.com/Sabrinalulu/Word2vec-Implementation/commit/f43c6bd0b5d89f2a529f6055733fda608b7d9a9d)
+![image](https://github.com/Sabrinalulu/Word2vec-Implementation/commit/f43c6bd0b5d89f2a529f6055733fda608b7d9a9d)
 
 The final result may look like:
-![alt text]()
+![image](https://github.com/Sabrinalulu/Word2vec-Implementation/blob/master/pain.PNG)
