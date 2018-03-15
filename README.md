@@ -9,5 +9,6 @@ Fllow the Online handbook of Wiki Word2vec implementation (http://textminingonli
 
 The php file fetched the word and sent it back:
 ![image](https://github.com/Sabrinalulu/Word2vec-Implementation/blob/master/phpfetchword.PNG)
+
 The final result may look like:
 ![image](https://github.com/Sabrinalulu/Word2vec-Implementation/blob/master/pain.PNG)
